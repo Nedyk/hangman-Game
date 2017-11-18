@@ -1,2 +1,5 @@
-<script type="text/javascript">
-    $(document).ready(function() {
+ <!DOCTYPE html><html lang="en"><head>      <meta charset="UTF-8">   <title>Number Checker</title>    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous"><script type="text/javascript" src="index.js"></script> </head><body style="max-width: 85%; margin: auto;">    <div id ="container-fluid" style="background-color:#c87fe8; font-family: 'Muli', sans-serif; font-size: 28px; height: 800px; ">    <div class="jumbotron">      <h1 class="text-center">Hangman Game</h1>       <h2 class="text-center">Press any key to get started:</h2>    </div>    <hr>
+<div id="currentword" style="text-align: center; padding-right: : 20px;" ><strong>Current word:</strong>  <br>
+<form name="mygame" style="text-align: center; padding-top: 30px;"><input name="userguess" type="text" size="5" maxlength="1"><input name="userpress" type="text" onkeyup="keypress()"><button onclick="compareletter()">Guess</button>
+<h4 id="triesremain">Number of Guesses remaining:</h4><h4 id="triesremain">Wins:</h4>  <br/><input name="refresh" type="button" value="Try Again" onClick="location.reload()"></form></div></div>  
+
